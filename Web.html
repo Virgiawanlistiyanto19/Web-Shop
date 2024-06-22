@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wann Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Welcome to Our Coffee Shop</h1>
+    </header>
+
+    <section id="home">
+      <div class="hero">
+        <h2>Freshly Brewed Coffee</h2>
+        <p>Your perfect cup, every time.</p>
+        <button onclick="scrollToMenu()">Explore Menu</button>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="latee.jpg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>A classic espresso, rich and flavorful.</p>
+          <p>Rp.15.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="espresso.avif" alt="Latte" />
+          <h3>Latte</h3>
+          <p>Perfectly steamed milk with a shot of espresso.</p>
+          <p>Rp.20.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="capucino.jpg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>A delightful blend of espresso and frothed milk.</p>
+          <p>Rp.25.000</p>
+        </div>
+        <!-- Add more menu items as needed -->
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are passionate about coffee and dedicated to providing the best
+        coffee experience to our customers. Our coffee beans are sourced from
+        the finest farms and our baristas are trained to craft the perfect cup.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Wann Coffee Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
